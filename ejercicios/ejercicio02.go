@@ -7,9 +7,11 @@ import (
 	"strconv"
 )
 
-func TabladeMultiplicar() {
+func TabladeMultiplicar() string {
 	var numero int
 	var err error
+	var texto string
+
 	scanner := bufio.NewScanner(os.Stdin)
 
 	for {
@@ -27,7 +29,10 @@ func TabladeMultiplicar() {
 	}
 
 	for i := 1; i <= 10; i++ {
-		fmt.Printf("%d x %d = %d \n", numero, i, i*numero)
+		//fmt.Printf("%d x %d = %d \n", numero, i, i*numero)
+		texto += fmt.Sprintf("%d x %d = %d \n", numero, i, i*numero)
 	}
+
+	return texto
 
 }

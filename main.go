@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/diomedd/godesde0/ejercicios"
+	"github.com/diomedd/godesde0/files"
 	//"github.com/diomedd/godesde0/iteracciones"
 )
 
@@ -43,5 +43,8 @@ func main() {
 
 	//iteracciones.Iterar()
 
-	ejercicios.TabladeMultiplicar()
+	//fmt.Println(ejercicios.TabladeMultiplicar())
+	//files.GrabaTabla()
+	//files.SumaTabla()
+	files.LeoArchivo()
 }
