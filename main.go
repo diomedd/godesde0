@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/diomedd/godesde0/variables"
+	ejerciciosi "github.com/diomedd/godesde0/ejercicios"
 )
 
 func main() {
@@ -11,9 +11,32 @@ func main() {
 	//fmt.Println("Hola Mundo")
 	//variables.MuestroEnteros()
 	//variables.RestoVariables()
-	estado, texto := variables.ConviertoaTexto(1588)
+	/*estado, texto := variables.ConviertoaTexto(1588)
 
 	fmt.Println(estado)
 	fmt.Println(texto)
 
+	if os := runtime.GOOS; os == "linux" || os == "OS X." {
+
+		fmt.Println("esto no es windows, es ", os)
+
+	} else {
+
+		fmt.Println("esto es windows", os)
+
+	}
+
+	switch os := runtime.GOOS; os {
+	case "linux":
+		fmt.Println("esto es linux")
+	case "darwin":
+		fmt.Println("esto es darwin")
+	default:
+		fmt.Printf("%s \n", os)
+
+	}*/
+
+	numero, texto := ejerciciosi.ConvaNumerico("500")
+	fmt.Println(numero)
+	fmt.Println(texto)
 }
