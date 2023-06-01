@@ -1,4 +1,4 @@
-package ejerciciosi
+package ejercicios
 
 import "strconv"
 

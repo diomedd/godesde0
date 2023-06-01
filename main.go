@@ -1,9 +1,8 @@
 package main
 
 import (
-	"fmt"
-
-	ejerciciosi "github.com/diomedd/godesde0/ejercicios"
+	"github.com/diomedd/godesde0/ejercicios"
+	//"github.com/diomedd/godesde0/iteracciones"
 )
 
 func main() {
@@ -34,9 +33,15 @@ func main() {
 	default:
 		fmt.Printf("%s \n", os)
 
-	}*/
+
 
 	numero, texto := ejerciciosi.ConvaNumerico("500")
 	fmt.Println(numero)
-	fmt.Println(texto)
+	fmt.Println(texto)	}*/
+
+	//teclado.IngresoNumero()
+
+	//iteracciones.Iterar()
+
+	ejercicios.TabladeMultiplicar()
 }
