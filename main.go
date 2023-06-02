@@ -7,9 +7,10 @@ import (
 	//dp "github.com/diomedd/godesde0/defer_panic"
 	//"github.com/diomedd/godesde0/files"
 	//"github.com/diomedd/godesde0/iteracciones"
-	"fmt"
+	//"fmt"
 
-	"github.com/diomedd/godesde0/gorutines"
+	//"github.com/diomedd/godesde0/gorutines"
+	"github.com/diomedd/godesde0/webserver"
 )
 
 func main() {
@@ -68,7 +69,7 @@ func main() {
 	//dp.VemosDefer()
 	//dp.EjemploPanic()
 
-	canal1 := make(chan bool)
+	/*canal1 := make(chan bool)
 	go gorutines.MiNombreLento("diego diomede", canal1)
 	defer func() {
 		<-canal1
@@ -77,6 +78,8 @@ func main() {
 	//_ = <-canal1
 
 	//var x string
-	//fmt.Scanln(&x)
+	//fmt.Scanln(&x)*/
+
+	webserver.MiwebServer()
 
 }
