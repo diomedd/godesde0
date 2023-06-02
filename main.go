@@ -4,9 +4,12 @@ import (
 	//ejerinterfaces "github.com/diomedd/godesde0/ejer_interfaces"
 	//"github.com/diomedd/godesde0/modelos"
 
-	dp "github.com/diomedd/godesde0/defer_panic"
+	//dp "github.com/diomedd/godesde0/defer_panic"
 	//"github.com/diomedd/godesde0/files"
 	//"github.com/diomedd/godesde0/iteracciones"
+	"fmt"
+
+	"github.com/diomedd/godesde0/gorutines"
 )
 
 func main() {
@@ -63,5 +66,17 @@ func main() {
 	//ejerinterfaces.HumanosRespirando(Pedro)
 
 	//dp.VemosDefer()
-	dp.EjemploPanic()
+	//dp.EjemploPanic()
+
+	canal1 := make(chan bool)
+	go gorutines.MiNombreLento("diego diomede", canal1)
+	defer func() {
+		<-canal1
+	}()
+	fmt.Println("estoy aqui")
+	//_ = <-canal1
+
+	//var x string
+	//fmt.Scanln(&x)
+
 }
