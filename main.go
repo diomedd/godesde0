@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/diomedd/godesde0/users"
+	ejerinterfaces "github.com/diomedd/godesde0/ejer_interfaces"
+	"github.com/diomedd/godesde0/modelos"
 	//"github.com/diomedd/godesde0/files"
 	//"github.com/diomedd/godesde0/iteracciones"
 )
@@ -54,5 +55,12 @@ func main() {
 	//funciones.Exponencia(10)
 	//	arreglos_slices.Capacidad()
 	//mapas.MostrarMapas()
-	users.AltaUsuario()
+	//users.AltaUsuario()
+
+	Pedro := new(modelos.Hombre)
+	ejerinterfaces.HumanosRespirando(Pedro)
+
+	Maria := new(modelos.Mujer)
+	ejerinterfaces.HumanosRespirando(Maria)
+
 }
