@@ -1,8 +1,10 @@
 package main
 
 import (
-	ejerinterfaces "github.com/diomedd/godesde0/ejer_interfaces"
-	"github.com/diomedd/godesde0/modelos"
+	//ejerinterfaces "github.com/diomedd/godesde0/ejer_interfaces"
+	//"github.com/diomedd/godesde0/modelos"
+
+	dp "github.com/diomedd/godesde0/defer_panic"
 	//"github.com/diomedd/godesde0/files"
 	//"github.com/diomedd/godesde0/iteracciones"
 )
@@ -57,10 +59,9 @@ func main() {
 	//mapas.MostrarMapas()
 	//users.AltaUsuario()
 
-	Pedro := new(modelos.Hombre)
-	ejerinterfaces.HumanosRespirando(Pedro)
+	//Pedro := new(modelos.Hombre)
+	//ejerinterfaces.HumanosRespirando(Pedro)
 
-	Maria := new(modelos.Mujer)
-	ejerinterfaces.HumanosRespirando(Maria)
+	dp.VemosDefer()
 
 }
