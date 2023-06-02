@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/diomedd/godesde0/files"
+	"github.com/diomedd/godesde0/arreglos_slices"
+	//"github.com/diomedd/godesde0/files"
 	//"github.com/diomedd/godesde0/iteracciones"
 )
 
@@ -46,5 +47,10 @@ func main() {
 	//fmt.Println(ejercicios.TabladeMultiplicar())
 	//files.GrabaTabla()
 	//files.SumaTabla()
-	files.LeoArchivo()
+	//files.LeoArchivo()
+
+	//funciones.Calculos()
+	//funciones.LlamarClouser()
+	//funciones.Exponencia(10)
+	arreglos_slices.Capacidad()
 }
