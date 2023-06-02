@@ -10,7 +10,7 @@ import (
 	//"fmt"
 
 	//"github.com/diomedd/godesde0/gorutines"
-	"github.com/diomedd/godesde0/webserver"
+	md "github.com/diomedd/godesde0/middleware"
 )
 
 func main() {
@@ -80,6 +80,8 @@ func main() {
 	//var x string
 	//fmt.Scanln(&x)*/
 
-	webserver.MiwebServer()
+	//webserver.MiwebServer()
+
+	md.MiMiddleware()
 
 }
