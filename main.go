@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/diomedd/godesde0/arreglos_slices"
+	"github.com/diomedd/godesde0/users"
 	//"github.com/diomedd/godesde0/files"
 	//"github.com/diomedd/godesde0/iteracciones"
 )
@@ -52,5 +52,7 @@ func main() {
 	//funciones.Calculos()
 	//funciones.LlamarClouser()
 	//funciones.Exponencia(10)
-	arreglos_slices.Capacidad()
+	//	arreglos_slices.Capacidad()
+	//mapas.MostrarMapas()
+	users.AltaUsuario()
 }
