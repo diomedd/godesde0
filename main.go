@@ -62,6 +62,6 @@ func main() {
 	//Pedro := new(modelos.Hombre)
 	//ejerinterfaces.HumanosRespirando(Pedro)
 
-	dp.VemosDefer()
-
+	//dp.VemosDefer()
+	dp.EjemploPanic()
 }
