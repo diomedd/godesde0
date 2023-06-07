@@ -6,4 +6,4 @@ type Humano interface {
 	Comer()
 	Sexo() string
 	EstaVivo() bool
-}
+}	
